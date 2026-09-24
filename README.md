@@ -1,6 +1,6 @@
 # MDAT_Spatial Data Dictionary
 
-[![gitleaks](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/secretScan.yml/badge.svg)](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/secretScan.yml) [![render-quarto](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/render-and-publish.yml/badge.svg)](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/render-and-publish.yml)
+[![render-quarto](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/render-and-publish.yml/badge.svg)](https://github.com/jmhatch-NOAA/PEMAD-ESB-MDAT-Spatial_Data_Dictionary/actions/workflows/render-and-publish.yml)
 
 A GitHub pages implementation of the Marine Development & Advanced Technology (MDAT) Data Dictionary for the MDAT_Spatial database.
 
