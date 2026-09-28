@@ -384,8 +384,8 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="spatial-extent">Spatial Extent</h3>
 <div class="cell">
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-997bfb6809346ee1ef22" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-997bfb6809346ee1ef22">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPolygons","args":[[[[{"lng":[-75.9679157134706,-65.16869247962288,-65.16869247962288,-75.9679157134706,-75.9679157134706],"lat":[35.14219346609407,35.14219346609407,44.48559025541953,44.48559025541953,35.14219346609407]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[35.14219346609407,44.48559025541953],"lng":[-75.9679157134706,-65.16869247962288]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-130b72dea7eed1165907" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-130b72dea7eed1165907">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addPolygons","args":[[[[{"lng":[-75.9679157134706,-65.16869247962288,-65.16869247962288,-75.9679157134706,-75.9679157134706],"lat":[35.14219346609407,35.14219346609407,44.48559025541953,44.48559025541953,35.14219346609407]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"#03F","weight":5,"opacity":0.5,"fill":true,"fillColor":"#03F","fillOpacity":0.2,"smoothFactor":1,"noClip":false},null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[35.14219346609407,44.48559025541953],"lng":[-75.9679157134706,-65.16869247962288]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -521,10 +521,10 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Description</em><br>Scientific survey strata for the eDNA Survey.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 7%">
-<col style="width: 76%">
-<col style="width: 10%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 40%">
+<col style="width: 30%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -546,42 +546,6 @@ ul.task-list li input[type="checkbox"] {
 <td style="text-align: left;">Survey name</td>
 <td style="text-align: left;">Name of NEFSC scientific survey</td>
 <td style="text-align: left;">esriFieldTypeString</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">STR_NAME</td>
-<td style="text-align: left;">Strata name</td>
-<td style="text-align: left;">Name of the strata numeric from 1 to 47, except for one stratum that is split into two polygons. Strata 38 is split and the name was changed to distinguish the east and west polygons.</td>
-<td style="text-align: left;">esriFieldTypeDouble</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">NUMOFPOLY</td>
-<td style="text-align: left;">Number of polygons</td>
-<td style="text-align: left;">Number of polygons that make up the strata (1 or 2)</td>
-<td style="text-align: left;">esriFieldTypeDouble</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">NUMOFSTA</td>
-<td style="text-align: left;">Number of stations</td>
-<td style="text-align: left;">Number of plankton stations sampled in the strata for current ECOMON/ eDNA program</td>
-<td style="text-align: left;">esriFieldTypeDouble</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">REGION</td>
-<td style="text-align: left;">Strata region</td>
-<td style="text-align: left;">Strata groupings (MAB = Mid-Atlantic Bight, SNE = Southern New England, GB = Georges Bank, GOM = Gulf of Maine)</td>
-<td style="text-align: left;">esriFieldTypeString</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">TYPE</td>
-<td style="text-align: left;">Type</td>
-<td style="text-align: left;">Strata description (C = coastal, IS = inner-shelf, MS = mid-shelf, SB = shelf break, Bank = bank, Off = off-shelf, Basin = deep basin)</td>
-<td style="text-align: left;">esriFieldTypeString</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ACRES</td>
-<td style="text-align: left;">Area (acres)</td>
-<td style="text-align: left;">Area of strata in acres</td>
-<td style="text-align: left;">esriFieldTypeDouble</td>
 </tr>
 </tbody>
 </table>
