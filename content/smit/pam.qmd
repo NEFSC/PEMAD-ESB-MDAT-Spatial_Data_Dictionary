@@ -77,7 +77,7 @@ pam_meta$layers |>
 #| echo: false
 #| results: asis
 # feature server url
-rwsc_pam_url = 'https://rwsc.env.duke.edu/arcgis/rest/services/Passive_Acoustic_Monitoring/MapServer/1'
+rwsc_pam_url = 'https://mgeldata.env.duke.edu/rest1/rest/services/RWSC/Passive_Acoustic_Monitoring/MapServer/1'
 
 # open layer
 rwsc_pam_layer = arcgislayers::arc_open(url = rwsc_pam_url)
@@ -88,14 +88,14 @@ rwsc_pam_fields = arcgislayers::list_fields(rwsc_pam_layer) |>
   dplyr::rename(dataType = type)
 
 # get field descriptions
-rwsc_pam_layer_meta = 'https://rwsc.env.duke.edu/arcgis/rest/services/Passive_Acoustic_Monitoring/MapServer/1/metadata' |>
+rwsc_pam_layer_meta = 'https://mgeldata.env.duke.edu/rest1/rest/services/RWSC/Passive_Acoustic_Monitoring/MapServer/1/metadata' |>
   xml2::read_xml()
 
 # fields
 field_names = rwsc_pam_layer_meta |>
   xml2::xml_find_all(xpath = './/attrlabl') |>
   xml2::xml_text()
-field_names = field_names[field_names != 'Shape']
+field_names = field_names[!field_names %in% c('entity', 'Color', 'Field24', 'Field25', 'Field26', 'Shape')]
   
 # descriptions
 field_desc = rwsc_pam_layer_meta |>
